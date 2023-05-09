@@ -5,10 +5,8 @@
 }
 
 .container {
-  --pInlineVal: 36px;
-  max-width: calc(1200px + 2 * var(--pInlineVal));
+  max-width: 1200px;
   margin-inline: auto;
-  padding-inline: var(--pInlineVal);
 }
 
 .wrapper {
@@ -22,37 +20,25 @@
   position: sticky;
   top: 0;
 }
+
 .nav .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-block: 12px;
 }
+
 .nav__menuWrapper {
   display: flex;
   gap: 24px;
   align-items: baseline;
-}
-.button {
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: cornflowerblue;
-  padding: 8px 16px;
-  border-radius: 8px;
-  color: white;
-  font-weight: 700;
-  text-align: center;
-}
-.button--type-text {
-  background-color: unset;
-  color: cornflowerblue;
-  padding-inline: 0;
 }
 
 .main__media {
   background-color: aliceblue;
   overflow: hidden;
 }
+
 .main__media > * {
   width: 100%;
   height: 100%;
@@ -62,45 +48,40 @@
   object-position: center;
 }
 
-#hero1 {
+#section1 {
   text-align: center;
 }
-#hero1 .button {
-  margin-inline: auto;
-}
-#hero1 .main__text {
+
+#section1 .main__text {
   margin-inline: auto;
   max-width: 600px;
   margin-bottom: 24px;
 }
-#hero1 .main__media {
+#section1 .main__media {
   aspect-ratio: 16/9;
 }
-#hero1 h2 {
+#section1 h2 {
   margin-bottom: 16px;
 }
-#hero1 p {
+#section1 p {
   margin-bottom: 24px;
 }
 
-#hero2 .wrapper {
+#section2 .wrapper {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-#hero2 .wrapper > * {
+#section2 .wrapper > * {
   flex: 1;
 }
-#hero2 .main__text__buttonWrapper {
-  display: flex;
-  gap: 16px;
-}
-#hero2 .main__media {
+
+#section2 .main__media {
   aspect-ratio: 4/3;
 }
-#hero2 h2 {
+#section2 h2 {
   margin-bottom: 16px;
 }
-#hero2 p {
+#section2 p {
   margin-bottom: 24px;
-} /*# sourceMappingURL=STYLE07.css.map */
+}
